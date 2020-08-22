@@ -1,0 +1,46 @@
+#=================================================================                                                 
+#   Programador: Chritopher Rodriguez   CCOM 3030	 Sección 002     
+#   Numero de estudiante: 801-16-7700   Primer Semestre 2020-21       
+#   Asignación 1                        Prof. Rafael J. Colorado       
+#   Archivo: asigna1.py                  Fecha: 08/28/2020
+#                                                                      
+#=================================================================
+#                                                                    
+#   Propósito:  Este programa, dado el ancho y el largo de un          
+#               rectángulo, calcula y despliega el perímetro y
+#               área del rectángulo.
+#                             
+#=================================================================
+
+# Despliegue el propósito del programa
+
+print("\n\tEste programa, dado el ancho y el largo")
+print("\tde un rectángulo, calcula y despliega")
+print("\tel perímetro y el área del rectángulo.\n")
+
+# Ingrese el ancho del rectángulo
+
+ancho = float(input("Ingrese el ancho del rectángulo ---> "))
+
+# Ingrese el largo del rectángulo
+
+largo = float(input("Ingrese el largo del rectángulo ---> "))
+
+# Calcule el perímetro del rectángulo
+
+perímetro = 2.0 * (ancho + largo)
+
+# Calcule el área del rectángulo
+
+área = ancho * largo
+
+# Despliegue las dimensiones del rectángulo
+
+print("\n<<< Dimensiones del Rectángulo >>>\n")
+print("\tAncho ========", format(ancho, '8.2f'))
+print("\tLargo ========", format(largo, '8.2f'))
+print("\tPerimetro ====", format(perímetro, '8.2f'))
+print("\tArea =========", format(área, '8.2f'))
+
+input("Oprima ENTER para terminar el programa…")
+
