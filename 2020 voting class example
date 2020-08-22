@@ -1,0 +1,19 @@
+#Programa para determinar
+#si puedes votar en el 2020.
+
+
+#Ingrese su nombre
+
+nombre = input ( "\tIngrese su nombre ---> ") 
+
+
+#Ingrese la edad
+
+edad = int (input("\tIngrese su edad ---> "))
+
+#Coteja si puede votar
+
+if edad >= 18 :
+    print(nombre, "puedes votar en el 2020.")
+else:
+    print (nombre, "sorry, no puedes votar en el 2020.")
