@@ -1,0 +1,48 @@
+# Encabezamiento
+
+
+PI = 3.14
+
+# despliega elprint("\n\tEste programa...\n")
+ 
+print("\n\tEste programa despliega las dimensiones del circulo\n")
+
+# Ingresar (Input) radio
+
+radio = float(input("\tIngresar el radio: "))
+
+# calcular el diametro del circulo
+
+diametro = 2.0 * radio
+
+# calcular la circunferencia del circulo
+
+circunferencia = 2.0 * PI * radio
+
+# calcular el area del circulo
+
+area = PI * radio ** 2
+
+
+# Calcular el volumen de la esfera
+
+volumen = 4/3 * PI * radio ** 3
+
+
+# desplega (Output) las dimensiones del circulo
+# radio
+# diametro
+# circunferencia
+# area
+# volumen 
+
+print("\n<<< Dimensiones del Circulo >>>\n")
+
+print("\tradio ==========", format(radio, '8.2f'))
+print("\tdiametro =======", format(diametro, '8.2f'))
+print("\tcircunferencia==", format(circunferencia, '8.2f'))
+print("\tarea============", format(area, '8.2f'))
+print("\tvolumen=========", format(volumen, '8.2f'))
+
+
+input("Oprima ENTER para terminar el programa...")
