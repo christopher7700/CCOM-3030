@@ -1,15 +1,21 @@
+
 # Encabezamiento
 
-
-PI = 3.14
+# Bosquejo de variables constantes
+import math
+PI = math.pi
+'''PI trajo 3.14 de una biblioteca de import math'''
 
 # despliega elprint("\n\tEste programa...\n")
  
-print("\n\tEste programa despliega las dimensiones del circulo\n")
+print('''\n\tEste programa, dado el radio de un circulo
+\tcalcula y despliegue su diametro, su circunferencia
+\t,su area y su volumen.\n''')
+      
 
 # Ingresar (Input) radio
 
-radio = float(input("\tIngresar el radio: "))
+radio = float(input("\tIngresar el radio > 0.0: "))
 
 # calcular el diametro del circulo
 
@@ -25,24 +31,24 @@ area = PI * radio ** 2
 
 
 # Calcular el volumen de la esfera
-
+'''volumen = 4/3 * PI * pow(radio,3.0)'''
 volumen = 4/3 * PI * radio ** 3
 
 
-# desplega (Output) las dimensiones del circulo
+'''# desplega (Output) las dimensiones del circulo
 # radio
 # diametro
 # circunferencia
 # area
 # volumen 
-
+'''
 print("\n<<< Dimensiones del Circulo >>>\n")
 
-print("\tradio ==========", format(radio, '8.2f'))
+print("\tradio ==========", format(radio, '8.3f'))
 print("\tdiametro =======", format(diametro, '8.2f'))
 print("\tcircunferencia==", format(circunferencia, '8.2f'))
-print("\tarea============", format(area, '8.2f'))
-print("\tvolumen=========", format(volumen, '8.2f'))
+print("\tarea============", format(area, '8.2e'))
+print("\tvolumen=========", format(volumen, '8.2e'))
 
 
 input("Oprima ENTER para terminar el programa...")
