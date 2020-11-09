@@ -1,0 +1,55 @@
+#=================================================================                                                 
+#   Programador: Chritopher Rodriguez   CCOM 3030    Sección 002     
+#   Numero de estudiante: 801-16-7700   Primer Semestre 2020-21       
+#   Asignación  #4                      Prof. Rafael J. Colorado       
+#   Archivo: asigna4                    Fecha: 09/18/2020
+#    cilindro circular recto                                                                 
+#=================================================================
+#                                                                    
+#   Propósito: Este programa, dado el radio de las bases y la altura
+#               de un cilindro circular recto, calcula y despliega
+#              el area de la superficie y el volumen del cilindro. 
+#                             
+#=================================================================
+
+
+# Despliegue el proposito del programa
+print('''\n\tEste programa, dado el radio de las bases y la altura
+\tde un cilindro circular recto, calcula y despliega
+\tel area de la superficie y el volumen del cilindro.''')
+
+# Bosquejo de variables constantes a utilizar
+import math
+PI = math.pi
+
+# Ingrese el radio del cilindro
+radio = float(input("Ingrese un radio para el cilindro > 0: "))
+
+# input validaition radio
+while radio <= 0 :
+    print("Error.El valor del radio debe ser mayor de 0.")
+    radio = float(input("Ingrese un radio para el cilindro > 0: "))
+
+# Ingrese la altura del cilindro
+altura = float(input("Ingrese una altura para el cilindro > 0: "))
+
+# Input validation para altura
+while altura <= 0 :
+    print("Error. El valor de la altura debe ser mayor de 0.")
+    altura = float(input("Ingrese una altura para el cilindro > 0: "))
+
+# Calcular area de superficie del cilindro
+superficie = 2.0 * PI * radio **2 + 2.0 * PI * radio * altura
+
+# Calcular Volumen del cilindro
+volumen = PI * radio **2 * altura
+
+# Desplegar Dimensiones del cilindro
+print("\n\t<<< Dimensiones del cilindro >>>\n")
+print("\tRadio del cilindro ===============",format(radio, '8.3f'))
+print("\tAltura del cilindro ==============",format(altura, '8.3f'))
+print("\tArea de superficie del cilindro ==",format(superficie, '8.3f'))
+print("\tVolumen del cilindro =============",format(volumen, '8.3f'))
+
+# FINITO
+input("Para terminar el programa oprima ENTER...")
